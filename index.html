@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.2/cosmo/bootstrap.min.css"
+      integrity="sha512-+qRf3F6gQR6T+AuZt6qJ8NucNWdXO0p4LDrNdH72UaoZt1dIghlVFPR2c0RRz2osJT6EJ8HM7jTEhFs4iVeNDA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>To do list with typescript</title>
+  </head>
+  <body style="overflow: hidden">
+    <div class="container w-50 mt-1">
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <form id="form">
+              <div class="m-3">
+                <label
+                  class="col-sm-2 col-form-label"
+                  style="
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 20px;
+                  "
+                  >Titulo</label
+                >
+                <input type="text" name="title" class="form-control" />
+              </div>
+              <div class="m-3">
+                <label
+                  class="col-sm-2 col-form-label"
+                  style="
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 20px;
+                  "
+                  >Descripcion</label
+                >
+                <textarea
+                  name="description"
+                  cols="30"
+                  rows="5"
+                  style="resize: none"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="text-center m-3">
+                <input
+                  type="submit"
+                  class="btn btn-success"
+                  value="enviar datos"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          id="result"
+          style="
+            overflow: auto;
+            height: 100px;
+            font-size: 20px;
+            border: 1px black solid;
+            margin-top: 20px;
+            padding-left: 10px;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
