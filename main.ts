@@ -19,8 +19,7 @@ let getData: any = (e) => {
   e.preventDefault();
   const { title, description } = e.target;
   arr.push((data = { title: title.value, description: description.value }));
-  console.log(arr)
-  
+  console.log(arr);
   pushData();
 };
 
