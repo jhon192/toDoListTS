@@ -20,6 +20,7 @@ let getData: any = (e) => {
   const { title, description } = e.target;
   arr.push((data = { title: title.value, description: description.value }));
   console.log(arr)
+  
   pushData();
 };
 
